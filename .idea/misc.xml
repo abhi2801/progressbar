@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/drawable/button.xml" value="0.1445" />
+        <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/drawable/edittext.xml" value="0.1445" />
         <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/fragment_dashboard.xml" value="0.19635416666666666" />
-        <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/fragment_login.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/ab/AndroidStudioProjects/quizUI/app/src/main/res/layout/fragment_signin.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -28,6 +28,12 @@ public class SignUpFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        signUpBinding=FragmentSignUpBinding.inflate(inflater);
         viewModel=new ViewModelProvider(this).get(SignInSignUpViewModel.class);
         viewModel.getLiveData().observe(getViewLifecycleOwner(), new Observer<FirebaseUser>() {
             @Override
@@ -37,12 +43,6 @@ public class SignUpFragment extends Fragment {
                 }
             }
         });
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        signUpBinding=FragmentSignUpBinding.inflate(inflater);
         return signUpBinding.getRoot();
     }
 

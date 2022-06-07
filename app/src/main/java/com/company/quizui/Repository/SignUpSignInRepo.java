@@ -18,11 +18,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 
 public class SignUpSignInRepo {
-    private Application application;
-    private MutableLiveData<FirebaseUser> firebaseUserMutableLiveData;
-    private FirebaseAuth auth;
-    private MutableLiveData<Boolean> loginstatus;
-    private CollectionReference reference;
+    private final Application application;
+    private final MutableLiveData<FirebaseUser> firebaseUserMutableLiveData;
+    private final FirebaseAuth auth;
+    private final MutableLiveData<Boolean> loginstatus;
+    private final CollectionReference reference;
 
     public MutableLiveData<FirebaseUser> getFirebaseUserMutableLiveData() {
         return firebaseUserMutableLiveData;
@@ -52,15 +52,15 @@ public class SignUpSignInRepo {
                    @Override
                    public void onComplete(@NonNull Task<DocumentReference> task) {
                   if (task.isSuccessful()){
+                      Toast.makeText(application.getApplicationContext(), "Dekho ebe Progress Bar show karibani", Toast.LENGTH_LONG).show();
                       firebaseUserMutableLiveData.setValue(auth.getCurrentUser());
-                      Toast.makeText(application.getApplicationContext(), "User details added"+task.getResult(), Toast.LENGTH_SHORT).show();
                   }else {
                       Toast.makeText(application.getApplicationContext(), "Failed to add user"+task.getResult(), Toast.LENGTH_SHORT).show();
                   }
                    }
                });
            }else {
-               Toast.makeText(application.getApplicationContext(), ""+task.getResult(), Toast.LENGTH_SHORT).show();
+               Toast.makeText(application.getApplicationContext(), "Error "+task.getResult(), Toast.LENGTH_SHORT).show();
            }
             }
         });

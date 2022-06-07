@@ -39,6 +39,9 @@
             android:background="@drawable/edittext"
             android:ems="10"
             android:hint="Email"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/email"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
@@ -49,6 +52,9 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/edittext"
             android:ems="10"
+            android:drawableStart="@drawable/password"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
             android:hint="Password"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
